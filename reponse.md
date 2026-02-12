@@ -233,20 +233,20 @@ Le protocole DNS n'a possiblement pas pu faire l'echange pour traduire le nom de
 
 **Commande utilisée :**
 ```bash
-
+arp -a # ou ip neigh show
 ```
 
 **Nombre d'entrées :**
 ```
-
+1
 ```
 
 **Une entrée (IP et MAC) :**
 ```
-
+(172.30.32.1) at 00:15:5d:1b:33:9e
 ```
 
-### b) Requête DNS pour www.collegemaisonneuve.qc.ca
+### b) Requête DNS pour www.cmaisonneuve.qc.ca
 
 **Commande utilisée :**
 ```bash
@@ -279,19 +279,19 @@ Le protocole DNS n'a possiblement pas pu faire l'echange pour traduire le nom de
 
 | Information | Valeur observée |
 |-------------|-----------------|
-| Adresse MAC source | |
-| Adresse MAC destination | |
-| Adresse IP source | |
-| Adresse IP destination | |
-| Type ICMP (numéro) | |
-| Code ICMP | |
+| Adresse MAC source | cc:d9:ac:45:88:87 |
+| Adresse MAC destination | e0:db:d1:f3:8f:12 |
+| Adresse IP source | 10.0.0.39 |
+| Adresse IP destination | 8.8.8.8 |
+| Type ICMP (numéro) | 8 |
+| Code ICMP | 0 |
 
 ### Question : Différence entre le Type ICMP d'un "Echo Request" et d'un "Echo Reply" ?
 
 ```
 Votre réponse :
 
-
+le echo request a un type 8 alors que le echo reply a un type 0
 ```
 
 > 📸 **Capture d'écran 4** : Capture Wireshark montrant les paquets ICMP avec le détail d'un paquet
@@ -306,15 +306,15 @@ Votre réponse :
 
 | Information | Valeur observée |
 |-------------|-----------------|
-| Port source (requête) | |
-| Port destination (requête) | |
-| Protocole de transport | |
-| Type de requête DNS | |
-| Adresse IP dans la réponse | |
+| Port source (requête) | 55244 |
+| Port destination (requête) | 53 |
+| Protocole de transport | UDP |
+| Type de requête DNS | type A |
+| Adresse IP dans la réponse | 140.82.114.4|
 
 > 📸 **Capture d'écran 5** : Capture Wireshark montrant la requête et réponse DNS
 > 
-> ![Capture 5](captures/capture5_wireshark_dns.png)
+> ![Capture 5](captures/capture5.png)
 
 ---
 
@@ -324,21 +324,21 @@ Votre réponse :
 
 | Information | ARP Request | ARP Reply |
 |-------------|-------------|-----------|
-| Adresse MAC source | | |
-| Adresse MAC destination | | |
-| Adresse IP recherchée | | |
+| Adresse MAC source | 00:15:5d:e8:b6:a4|  00:15:5d:1b:33:9e  |
+| Adresse MAC destination | ff:ff:ff:ff:ff:ff | 00:15:5d:e8:b6:a4|
+| Adresse IP recherchée |  172.30.32.1 | 172.30.40.177|
 
 ### Question : Pourquoi l'adresse MAC de destination dans l'ARP Request est-elle `ff:ff:ff:ff:ff:ff` ?
 
 ```
 Votre réponse :
 
-
+car la requete ARP est envoyer en broadcast a tout les appareil associer l'ip connue a l'adresse mac inconnue,ensuite l'appareil qui a cet ip seras le seul qui repond avec l'adrese mac
 ```
 
 > 📸 **Capture d'écran 6** : Capture Wireshark montrant l'échange ARP
 > 
-> ![Capture 6](captures/capture6_wireshark_arp.png)
+> ![Capture 6](captures/capture6.png)
 
 ---
 
