@@ -267,7 +267,7 @@ nslookup www.cmaisonneuve.qc.ca #ou dig www.cmaisonneuve.qc.ca
 
 > 📸 **Capture d'écran 3** : Insérez votre capture de la table ARP et d'une requête DNS
 > 
-> >![Capture 3](captures/capture3_arp_dns.png)
+> >![Capture 3](captures/capture3.1.png)
 
 ---
 
@@ -354,21 +354,21 @@ car la requete ARP est envoyer en broadcast a tout les appareil associer l'ip co
 
 Cochez les fonctionnalités que vous avez implémentées :
 
-- [ ] Affichage du nom de l'hôte
-- [ ] Affichage de la date et heure
-- [ ] Affichage de la version du système
-- [ ] Affichage de l'adresse IP locale
-- [ ] Affichage de l'adresse de la passerelle
-- [ ] Affichage des serveurs DNS
-- [ ] Test de connectivité localhost
-- [ ] Test de connectivité passerelle
-- [ ] Test de connectivité Internet (8.8.8.8)
-- [ ] Test de résolution DNS (google.com)
-- [ ] Affichage de la table ARP
-- [ ] Résolution DNS de 2+ domaines
-- [ ] Gestion des erreurs (messages si échec)
-- [ ] Commentaires dans le code
-- [ ] Affichage clair avec titres de sections
+- [X] Affichage du nom de l'hôte
+- [X] Affichage de la date et heure
+- [X] Affichage de la version du système
+- [X] Affichage de l'adresse IP locale
+- [X] Affichage de l'adresse de la passerelle
+- [X] Affichage des serveurs DNS
+- [X] Test de connectivité localhost
+- [X] Test de connectivité passerelle
+- [X] Test de connectivité Internet (8.8.8.8)
+- [X] Test de résolution DNS (google.com)
+- [X] Affichage de la table ARP
+- [X] Résolution DNS de 2+ domaines
+- [X] Gestion des erreurs (messages si échec)
+- [X] Commentaires dans le code
+- [X] Affichage clair avec titres de sections
 
 ### Difficultés rencontrées (optionnel)
 
@@ -380,7 +380,7 @@ Décrivez ici les difficultés que vous avez rencontrées lors de la création d
 
 > 📸 **Capture d'écran 7** : Capture montrant l'exécution de votre script
 > 
-> ![Capture 7](captures/capture7_script_execution.png)
+> ![Capture 7](captures/capture7.png)
 
 ---
 
@@ -390,15 +390,15 @@ Décrivez ici les difficultés que vous avez rencontrées lors de la création d
 
 Vérifiez que votre projet contient :
 
-- [ ] `reponse.md` (ce fichier complété)
-- [ ] `diagnostic_reseau.sh` (votre script)
-- [ ] `captures/capture1_config_reseau.png`
-- [ ] `captures/capture2_ping.png`
-- [ ] `captures/capture3_arp_dns.png`
-- [ ] `captures/capture4_wireshark_icmp.png`
-- [ ] `captures/capture5_wireshark_dns.png`
-- [ ] `captures/capture6_wireshark_arp.png`
-- [ ] `captures/capture7_script_execution.png`
+- [X] `reponse.md` (ce fichier complété)
+- [X] `diagnostic_reseau.sh` (votre script)
+- [X] `captures/capture1_config_reseau.png`
+- [X] `captures/capture2_ping.png`
+- [X] `captures/capture3_arp_dns.png`
+- [X] `captures/capture4_wireshark_icmp.png`
+- [X] `captures/capture5_wireshark_dns.png`
+- [X] `captures/capture6_wireshark_arp.png`
+- [X] `captures/capture7_script_execution.png`
 
 ---
 
