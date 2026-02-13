@@ -9,7 +9,7 @@
 
 **Groupe :** _____________________
 
-**Lien GitHub du devoir** : _____________________
+**Lien GitHub du devoir** : (https://github.com/samuellortie2001-lab/lab2)
 
 **Date de remise :** Jeudi 13 février 2026
 ---
