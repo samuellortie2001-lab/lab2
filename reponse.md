@@ -250,19 +250,19 @@ arp -a # ou ip neigh show
 
 **Commande utilisée :**
 ```bash
-
+nslookup www.cmaisonneuve.qc.ca #ou dig www.cmaisonneuve.qc.ca
 ```
 
 **Adresse IP obtenue :**
 ```
-
+10.255.255.254
 ```
 
 ### c) Commande `dig` pour github.com - TTL
 
 **TTL (Time To Live) de l'enregistrement :**
 ```
-
+38
 ```
 
 > 📸 **Capture d'écran 3** : Insérez votre capture de la table ARP et d'une requête DNS
